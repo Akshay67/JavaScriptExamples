@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            This is first JavaScript Progrma to change Name
+        </title>
+        <style>
+            p {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 1px;
+                text-align: center;
+                display: inline;
+                background: rgba(0,0,200,0.3);
+                background-color:cadetblue;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <p>Player Name: Chris</p>
+
+    <script>
+        const para = document.querySelector('p');
+        para.addEventListener('click', changeName);
+
+        function changeName(){
+            let name = prompt("Enter name:");
+            para.textContent="Player Name:"+name;
+        }
+    </script>
+</html>

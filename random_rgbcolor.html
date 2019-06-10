@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>This is random color generator program</title>
+    </head>
+    <body>
+        <button>Click me to change backgrond color</button>
+        <script>
+            var btn = document.querySelector('button')
+            function random(number){
+                return Math.floor(Math.random()*(number+1));
+            }
+
+            btn.onclick = function(){
+                var randmcolor = 'rgb('+random(255)+','+random(255)+','+random(255)+')';
+                document.body.style.backgroundColor = randmcolor;
+            }
+        </script>
+    </body>
+</html>
