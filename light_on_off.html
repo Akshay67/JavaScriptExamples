@@ -1,0 +1,51 @@
+<html>
+   <head>
+       <title>
+           This is boring light on off web Page
+       </title>
+<style>
+
+    #container{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button {
+         height: 70px;
+        width: 150px;
+    }
+    .hidden{
+        display: none
+    }
+</style>
+
+   </head>
+<body>         
+    
+    <img id="myImage" src="pic_bulboff.gif" onclick="changeButton()"> 
+    
+    <div id="container">    
+        <button onclick="changeButtonName()" type="button" id="myButton">ON</button>
+    </div>   
+    <script>
+        function changeButtonName(){            
+            var  Text = document.getElementById("myButton");
+            console.log(Text.innerHTML == "ON");
+            if(Text.innerHTML == "ON")
+            {                  
+                var src = document.getElementById("myImage").src = 'pic_bulbon.gif';                
+                Text.innerHTML = "OFF";
+                console.log(Text.innerHTML);
+            }
+            else{
+                var src = document.getElementById("myImage").src = 'pic_bulboff.gif';                
+                Text.innerHTML = "ON";
+                console.log(Text.innerHTML);
+            }
+        }
+
+    </script>
+</body>
+</html>
