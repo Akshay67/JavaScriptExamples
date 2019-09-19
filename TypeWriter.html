@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Learn JavaScript Inline</title>
+</head>
+<body>
+
+	<h1> TypeWriter</h1>
+	<button onclick="TypeWriter()">Click Me</button>
+	<p id="demo"></p>
+
+	<script>
+		var i = 0;
+		var text = 'This is automatic typing from ghost wooo hoo...!!!!';
+		var speed = 40;
+
+		function TypeWriter(){
+			if (i < text.length){
+				document.getElementById("demo").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(TypeWriter, speed);
+			}
+		}
+	</script>
+
+</body>
+</html>
