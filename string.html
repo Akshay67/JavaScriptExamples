@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>string example</title>
+    </head>
+    <body>
+        <p>count the string length</p>
+        <p id='demo'></p>
+        <script>
+            var x= "Hey Hello Wrold..!"
+            document.getElementById('demo').innerHTML = x.length;
+        </script>
+
+        <p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+        <p id="Demo"></p>
+
+        <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("where");
+        document.getElementById("Demo").innerHTML = pos;
+        </script>
+
+
+        <p id="arr"></p>
+        <script>
+            var cars = ["BMW","Volvo","Honda"];
+            cars[2] = "Hero";
+            document.getElementById("arr").innerHTML = cars;
+        </script>
+
+    </body>
+</html>

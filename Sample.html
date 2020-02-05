@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title> Practice </title>
+
+        <script>
+            function timeShow(){
+                document.getElementById('showtime').innerHTML=Date()
+            }
+            function changeText(){
+                document.getElementById('demo').innerHTML ='After change the text'
+            }
+            function changeTextSize(){
+                document.getElementById('changeSize').style.fontSize = '40px'
+            }
+            function hideText(){
+                document.getElementById('hidetext').style.display='none'
+            }
+            function showText(){
+                document.getElementById('newtext').style.display= 'Block'
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h2>Check the date and time</h2>
+        <p id="showtime"></p>
+        <button type="button" onclick="timeShow()">Click Me to show date and time</button>
+
+        <h2>Change the inner Html Text</h2>
+        <p id="demo">Before change the text</p>
+        <button type="button" onclick="changeText()">Click to change the text</button>
+        
+        <h2>Change the font size</h2>
+        <p id='changeSize'>Font size will increases</p>
+        <button type="button" onclick="changeTextSize()">Click me to change the font size</button>
+    
+        <h2>hide the html element</h2>
+        <p id='hidetext'>This will be hide</p>
+        <button type="button" onclick="hideText()">click me to hide the text</button>
+    
+        <h2>Show HTML elements</h2>
+        <p>This is default text</p>
+        <p id="newtext" style="display: none;">This is new text</p>
+        <button type="button" onclick="showText()">Click me to show new text</button>
+        
+        <script>
+            document.write(5+6)
+        </script>
+
+    </body>
+</html>

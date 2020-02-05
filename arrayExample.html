@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Array example</title>
+    </head>
+    <body>
+        <p id="arr"></p>
+        <script>
+            var cars = ["BMW","Volvo","Honda","Mycar","yourCar"];
+            document.getElementById("arr").innerHTML = cars;
+            document.getElementById('arr').innerHTML = cars.toString();
+            document.getElementById('arr').innerHTML = cars.join(" - ")
+            document.getElementById('arr').innerHTML = cars.shift();
+            document.getElementById('arr').innerHTML = cars;
+            document.getElementById('arr').innerHTML = cars.shift();
+            document.getElementById('arr').innerHTML = cars;
+            cars.unshift("Maruti")
+            document.getElementById('arr').innerHTML = cars;
+        </script>
+
+    </body>
+</html>

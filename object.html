@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>This is object example</title>
+    </head>
+<body>
+    <p id='bike'></p>
+    <script>
+        //Create an object 
+        var Bike = {
+            companyName:"HeroHonda",
+            color:"Black",
+            price:'1000',
+            number: 'MH09 DT 1484',
+            bikeAge: '5',
+            fullInfo : function(){
+                    return " Company Name "+this.companyName + " Bike price "+  this.price;
+                }
+            };
+        // This will display the data
+        document.getElementById('bike').innerHTML = Bike.fullInfo();
+    </script>
+
+    <p id='info'></p>
+    <script>
+        var bikes = ["DreamYuga","Splendor","Unicorn","Passion","Pulsar"]
+        var blen = bikes.length;
+        var text = "<ul>";
+        for (var i = 0; i<blen; i++){
+            text +=  "<li>" + bikes[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById('info').innerHTML=text;
+    </script>
+
+</body>
+</html>
