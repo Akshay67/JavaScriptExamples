@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>for loop example</title>
+    </head>
+    <body>
+        <p id='demo'></p>
+
+        <script>
+            var text = "";
+            var num =10
+            var i;
+            for(i=1; i<=num; i++){
+                text += "The number is " + i*2 + "<br>";
+            }
+            document.getElementById('demo').innerHTML= text
+            
+        </script>
+        
+        <h2>For In loop</h2>
+        <p id='inloop'></p>
+        <script>
+            var person = {
+                firstName: 'Jhon',
+                lastName: 'Doe',
+                age : '22'
+            }
+            var text = ""
+            var x;
+            for(x in person){
+                text += person[x] + " "
+            }
+            document.getElementById('inloop').innerHTML = text
+        </script>
+
+        <h2>JavaScript For/Of Loop</h2>
+
+        <p>The for/of statement loops through the values of an iterable object.</p>
+
+        <script>
+        var cars = ['BMW', 'Volvo', 'Mini'];
+        var x;
+
+        for (x of cars) {
+        document.write(x + "<br >");
+        }
+        </script>
+
+        <h2>JavaScript For/Of Loop</h2>
+
+        <p>The for/of statement loops through the values of an iterable object.</p>
+
+        <script>
+        var txt = 'JavaScript';
+        var x;
+
+        for (x of txt) {
+        document.write(x + "<br >");
+        }
+        </script>
+
+    </body>
+</html>

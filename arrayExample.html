@@ -17,5 +17,18 @@
             document.getElementById('arr').innerHTML = cars;
         </script>
 
+        <h2>Java Script array sorting</h2>
+        <p The lowest number is:></p> <span id='lowsernumber'></span></p>
+
+        <script>
+            var myArray = [10,45,98,351,654,1,366,54]
+            document.getElementById('lowsernumber').innerHTML = myFunction(myArray);
+
+            function myFunction(arr){
+                return Math.min.apply(null,arr)
+            }
+
+        </script>
+
     </body>
 </html>

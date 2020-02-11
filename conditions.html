@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Conditions Examples</title>
+    </head>
+    <body>
+        <p id='demo'></p>
+        <script>
+            var hours = new Date().getHours();
+            var greetings;
+            if(hours<12){
+                greetings = "Good Morning.!"
+            }
+            else if(hours < 18 && hours > 12){
+                greetings = "Good Evening.!"
+            }
+            else{
+                greetings = "Good Night.!"
+            }
+            document.getElementById('demo').innerHTML = greetings;
+        </script>
+    </body>
+</html>
